@@ -1,0 +1,71 @@
+.fa {
+    padding: 8px;
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    border-radius: 5%;
+    text-decoration: none;
+}
+
+.fa:hover{
+    opacity: 0.5;
+}
+
+.top-container{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;  
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    transition: top 0.3s
+}
+
+div.social-links{
+    display: flex;
+    align-items: baseline;
+}
+
+header.header{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+header a{
+    font-family: 'Dancing Script',cursive;
+    font-size: 40px;
+    text-decoration: none;
+    color: rgb(22, 22, 22);
+}
+.in{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    padding: 2px;
+}
+
+.in:hover{
+    background: rgb(0, 0, 0, 0.2);
+}
+
+nav.page-nav{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    align-items: baseline;
+
+}
+
+.aa{
+    height: 1500px;
+}
+
+/*
+.fa-facebook {
+    background: #3B5998;
+    color: white;  
+*/
+
+
