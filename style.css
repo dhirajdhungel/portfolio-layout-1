@@ -8,7 +8,9 @@
 }
 body{
     overflow-x: hidden;
+    position: relative;
 }
+
 .fa {
     padding: 8px;
     font-size: 25px;
@@ -61,14 +63,6 @@ nav.page-nav a{
     background: rgb(0, 0, 0, 0.2);
 }
 
-/* nav.page-nav{
-    display: flex;
-    justify-content: space-between;
-    width: 200px;
-    align-items: center;
-
-} */
-
 .burger{
     display:none;
     cursor: pointer;
@@ -87,8 +81,8 @@ nav.page-nav a{
 @media only screen and (max-width: 640px) {
     body{
         overflow-x: hidden;
-    }
-
+        
+    } 
     header a{
         font-size: 25px;
         padding-right: 30px;
@@ -105,7 +99,7 @@ nav.page-nav a{
     }
 
     .burger div{
-        width: 20px;
+        width: 18px;
         height: 3px;
         background-color: rgb(22, 22, 22);
         margin: 6px 0;
@@ -118,11 +112,11 @@ nav.page-nav a{
         right: 0;
         top: 10vh;
         height: 90vh;
-        width: 50vw;
+        width: 50vh;
         align-items: center;
-        transform: translateX(100%);
+        transform: opacity(0%);
         transition: transform 0.5s;
-        display: flex;
+        display: none;
         flex-direction: column;
         justify-content: space-around;
     }
@@ -143,9 +137,9 @@ nav.page-nav a{
     }
 
     .toggle .lin1{
-        transform: rotate(-45deg) translate(-5px,4px); 
+        transform: rotate(-45deg) translate(-6px,3px);
+        /* background-color: aqua;  */
     }
-    
     .toggle .lin2{
         opacity: 0;
     }
@@ -153,7 +147,7 @@ nav.page-nav a{
         transform: rotate(45deg) translate(-9px,-7px);
     }
 
-    nav.nav-active
-    {
-    transform: translateX(0);
+    nav.page-nav.nav-active{
+    transform: opacity(100%);
+    display: flex;
     }
